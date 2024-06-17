@@ -1,0 +1,16 @@
+.h2-formm{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid none;
+    /*border-radius: 30px;*/
+    background: linear-gradient(to bottom, #869de8,  #a8e2b9);
+    padding: 80px 80px;
+    box-shadow: 10px 10px 20px rgba(0.5, 0.5, 0.5, 0.5);
+}
+.register{
+    margin-bottom: 60px;
+    color: rgb(230, 249, 255);
+}
