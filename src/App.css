@@ -5,7 +5,11 @@ body{
     background:linear-gradient(to right, #cbd5e1, #d1dbef); /* Mavi tonlarından camgöbeği tonlarına */
     color: #000; /* Metin rengini siyah yapar */
     font-size: 24px;
+
+    margin: 0; /* Varsayılan kenar boşluklarını kaldır */
+    height: 100vh; /* Tam ekran yükseklik */
+    display: flex;
+    flex-direction: column;
 }
 
-/* background: linear-gradient(to top right, #718096, #f9fafb);*/
-/*background: linear-gradient(to right, #cbd5e1, #64748b);*/
+

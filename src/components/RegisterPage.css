@@ -14,3 +14,10 @@
     margin-bottom: 60px;
     color: rgb(230, 249, 255);
 }
+.error-message {
+    color: rgb(214, 26, 26);
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
