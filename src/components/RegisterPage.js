@@ -135,7 +135,8 @@ const RegisterPage = () => {
   };
 
   return (
-    <div className='h2-formm'>
+    <div className='container-2'>
+        <div className='h2-formm'>
       <h2 className='register'>Register</h2>
       <Form
         name="basic"
@@ -175,7 +176,7 @@ const RegisterPage = () => {
           <Input.Password type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
         </Form.Item>
         <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-          <Button style={{ marginRight: '20px' }} type="primary" htmlType="submit">
+          <Button style={{ marginRight: '10px' }} type="primary" htmlType="submit">
             Register
           </Button>
           <Link to="/">
@@ -185,6 +186,8 @@ const RegisterPage = () => {
         {errorMessage && <div className="error-message">{errorMessage}</div>}
       </Form>
     </div>
+    </div>
+    
   );
 };
 

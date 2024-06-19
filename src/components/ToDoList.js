@@ -15,7 +15,7 @@ function ToDoList() {
 
     return (
         <div className="App">
-            <h1>Yapılacaklar Listesi</h1>
+            <h1>To Do List</h1>
             <TodoForm addTodo={addTodo} />
             <TodoList todos={todos} />
         </div>

@@ -22,7 +22,7 @@ function TodoForm({ addTodo }) {
             <form onSubmit={handleSubmit}>
             <input
                 type="text"
-                placeholder="Görev"
+                placeholder="mission"
                 value={task}
                 onChange={(e) => setTask(e.target.value)}
                 required
@@ -41,7 +41,7 @@ function TodoForm({ addTodo }) {
                 onChange={(e) => setEndDate(e.target.value)}
                 required
             />
-            <button className="buttonspecial" type="submit">Ekle</button>
+            <button className="buttonspecial" type="submit">Add</button>
             </form>
     );
 }

@@ -36,5 +36,67 @@ html, body, #root {
   .breadcrumb-container {
     margin: 16px 0;
   }
+  */
+  /* styles.css */
+.menu-item-anasayfa {
+  background-color: #7db7ce !important;
+  font-size: 20px;
+  font-weight: 700;
+   
+ 
+}
+
+.menu-item-takvim {
+  background-color: #7db7ce !important;
+  font-size: 20px;
+  font-weight: 700;
+ 
   
-*/
+}
+
+.menu-item-yapilacaklar {
+  background-color: #7db7ce !important;
+  font-size: 20px;
+  font-weight: 700;
+   
+ 
+}
+
+.menu-item-raporlar {
+  background-color: #7db7ce !important;
+  font-size: 20px;
+  font-weight: 700;
+  
+  
+}
+.log-out-button{
+  background-color: #f44a30;
+  border-radius: 0%;
+  text-align: center;
+  padding-bottom: 46px;
+  font-size: 20px;
+  padding-top: 15px;
+}
+.takvim-sidebar{
+  background-color: #95cee4 !important;
+  color: white !important;
+  font-weight: 700;
+  font-size: 18px;
+}
+.filtre-sidebar{
+  background-color: #95cee4 !important;
+  color: white !important;
+  font-weight: 700;
+  font-size: 18px;
+}
+.rutin-sidebar{
+  background-color: #95cee4 !important;
+  color: white !important;
+  font-weight: 700;
+  font-size: 18px;
+}
+.calendar-container {
+  padding: 15px; /* Adjust the padding value as needed */
+  background-color: white; /* Optional: Add background color if needed */
+  border-radius: 8px; /* Optional: Add border radius if needed */
+}
