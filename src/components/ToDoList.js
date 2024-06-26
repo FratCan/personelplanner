@@ -866,6 +866,7 @@ function ToDoList() {
 
 export default ToDoList;
 */
+
 import React, { useState, useEffect } from 'react';
 import './ToDoList.css';
 import Calendar from './Calendar';
@@ -941,7 +942,7 @@ function ToDoList() {
       <div className="App">
         <h1>To Do List</h1>
         <div className='inputs'>
-          <input
+          <input className='task-input'
             type="text"
             placeholder="Task"
             value={task}

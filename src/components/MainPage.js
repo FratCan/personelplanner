@@ -384,13 +384,12 @@ const { Header, Content, Sider } = Layout;
 
 const items1 = [
   { key: '1', label: 'To Do List',className:'menu-item-yapilacaklar' },
-  { key: '2', label: 'Prepare Report',className:'menu-item-raporlar' },
+  { key: '2', label: 'Filter And Report',className:'menu-item-raporlar' },
+  { key: '3', label: 'Takvim Görünümü',className:'takvim-sidebar'},
 ];
 
 const items2=[
-  { key: '1', label: 'Takvim Görünümü',className:'takvim-sidebar'},
-  { key: '2', label: 'Filtreleme Seçenekleri' ,className:'filtre-sidebar'},
-  { key: '3', label: 'Rutin İşler',className:'rutin-sidebar' },
+  
 ]
 /*
 const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map((icon, index) => {
@@ -437,6 +436,8 @@ const MainPage = () => {
         return <ToDoList/>; // Yapılacaklar Listesi bileşeni
       case '2':
         return <div>Raporlar Yap İçeriği</div>;
+      case '3':
+        return <div>Takvim Görünümü</div>;
       default:
         return <div><ToDoList/></div>;
     }
@@ -479,30 +480,7 @@ const MainPage = () => {
 
 
       <Layout>
-        <Sider
-          width={230}
-          style={{
-            background:'red',
-          }}
-        >
-          <Menu
-            mode="inline"
-            defaultSelectedKeys={['1']}
-            defaultOpenKeys={['sub1']}
-            style={{
-              height: '100%',
-              borderRight: 0,
-              padding:8,
-            }}
-          >
-            {items2.map(item => (
-            <Menu.Item key={item.key} className={item.className}>
-              {item.label}
-            </Menu.Item>
-          ))}
-          </Menu>
-        </Sider>
-
+     
         <Layout
           style={{
             padding: '0 24px 24px',
@@ -533,3 +511,28 @@ const MainPage = () => {
 };
 
 export default MainPage;
+   /*
+        <Sider
+          width={230}
+          style={{
+            background:'red',
+          }}
+        >
+          <Menu
+            mode="inline"
+            defaultSelectedKeys={['1']}
+            defaultOpenKeys={['sub1']}
+            style={{
+              height: '100%',
+              borderRight: 0,
+              padding:8,
+            }}
+          >
+            {items2.map(item => (
+            <Menu.Item key={item.key} className={item.className}>
+              {item.label}
+            </Menu.Item>
+          ))}
+          </Menu>
+        </Sider>
+*/

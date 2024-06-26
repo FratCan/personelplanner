@@ -133,14 +133,14 @@ li {
 }
 .calendar{
   min-width: 700px;
-  max-width: 400px;
+  max-width:100px;
   padding: 40px;
 }
 .App {
   font-family: Arial, sans-serif;
   padding: 20px;
   max-width: 600px;
-  padding: 30px;
+  padding: 10px;
   margin-right: 20px;
   
 }
@@ -194,4 +194,7 @@ li {
 }
 .top-task {
   background-color: lightyellow;
+}
+.task-input{
+  width: 180px;
 }

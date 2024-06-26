@@ -76,10 +76,16 @@ html, body, #root {
   padding-top: 15px;
 }
 .takvim-sidebar{
+  /*
   background-color: #95cee4 !important;
   color: white !important;
   font-weight: 700;
   font-size: 18px;
+  */
+  background-color: #7db7ce !important;
+  font-size: 20px;
+  font-weight: 700;
+  border: rgb(8, 20, 72) solid 3px;
 }
 .filtre-sidebar{
   background-color: #95cee4 !important;
