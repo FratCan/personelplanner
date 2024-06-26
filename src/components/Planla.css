@@ -1,0 +1,70 @@
+/*
+.sırala{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.containerr{
+ border: 1px solid;
+ padding: 340px 200px;
+ display: flex;
+ flex-direction: column;
+ align-items:center;  
+ position: relative; 
+ max-width: 400px;
+ max-height: 300px;
+}
+.containerr h1{
+    color: rgb(4, 20, 51);
+    font-size: 25px;
+    position: absolute;  
+    top: 0; 
+    margin: 10px; 
+}
+
+.input{
+    min-width: 350px;
+    min-height: 190px;
+    padding-bottom: 160px;
+}
+*/
+
+.sırala{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.containerr{
+    border: 1px solid;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-width: 400px;
+    min-height: 650px;
+}
+
+.containerr h1{
+    color: rgb(4, 20, 51);
+    font-size: 25px;
+    margin: 10px;
+}
+
+.input{
+    width: 80%;
+    margin-top: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.buttonplan{
+    color: aliceblue;
+    background-color: green;
+    border-radius: 10px;
+    width: 20%;
+    height: 6%;
+    margin-top: 10px;
+}

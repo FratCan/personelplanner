@@ -42,36 +42,34 @@ html, body, #root {
   background-color: #7db7ce !important;
   font-size: 20px;
   font-weight: 700;
-   
- 
+  padding-left: 200px;
+  border: rgb(8, 20, 72) solid 3px;
 }
 
 .menu-item-takvim {
   background-color: #7db7ce !important;
   font-size: 20px;
   font-weight: 700;
- 
-  
+  border: rgb(8, 20, 72) solid 3px;
 }
 
 .menu-item-yapilacaklar {
   background-color: #7db7ce !important;
   font-size: 20px;
   font-weight: 700;
-   
- 
+  border: rgb(8, 20, 72) solid 3px;
+
 }
 
 .menu-item-raporlar {
   background-color: #7db7ce !important;
   font-size: 20px;
   font-weight: 700;
-  
-  
+  border: rgb(8, 20, 72) solid 3px;
 }
 .log-out-button{
   background-color: #f44a30;
-  border-radius: 0%;
+  border-radius: 10%;
   text-align: center;
   padding-bottom: 46px;
   font-size: 20px;

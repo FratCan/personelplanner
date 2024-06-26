@@ -12,7 +12,9 @@
 }
 .register{
     margin-bottom: 60px;
-    color: rgb(230, 249, 255);
+    color: white;
+    font-weight: 700;
+    font-size: 36px;
 }
 .error-message {
     color: rgb(214, 26, 26);

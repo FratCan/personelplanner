@@ -1,0 +1,27 @@
+/* calendar.css */
+.highlight {
+    background-color: #5aff3d;
+    padding: 0.5em;
+    display: inline-block;
+    color: white;
+}
+.calendar {
+    width: 100%;
+  }
+  
+  .daily-view {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hour-cell {
+    padding: 8px;
+    border: 1px solid #ddd;
+    margin: 2px 0;
+  }
+  .month-highlight {
+    background-color: rgba(255, 165, 0, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+  }
+  

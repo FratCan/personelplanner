@@ -371,28 +371,26 @@ const MainPage = () => {
 export default MainPage;
 */
 
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { LaptopOutlined, NotificationOutlined, UserOutlined } from '@ant-design/icons';
 import { Breadcrumb, Layout, Menu, theme, Button, Flex, Calendar } from 'antd';
-import ToDoList from './ToDoList'; // ToDoList bileşenini import edin
+import ToDoList from './ToDoList';
 import './MainPage.css';
-
+import Planla from './Planla';
 
 
 const { Header, Content, Sider } = Layout;
 
 const items1 = [
-  { key: '1', label: 'Home',className:'menu-item-anasayfa'},
-  { key: '2', label: 'Calendar' ,className:'menu-item-takvim'},
-  { key: '3', label: 'To Do List',className:'menu-item-yapilacaklar' },
-  { key: '4', label: 'Make reporting',className:'menu-item-raporlar' },
+  { key: '1', label: 'To Do List',className:'menu-item-yapilacaklar' },
+  { key: '2', label: 'Prepare Report',className:'menu-item-raporlar' },
 ];
 
 const items2=[
-  { key: '1', label: 'Calendar View',className:'takvim-sidebar'},
-  { key: '2', label: 'Filter' ,className:'filtre-sidebar'},
-  { key: '3', label: 'Routine Work',className:'rutin-sidebar' },
+  { key: '1', label: 'Takvim Görünümü',className:'takvim-sidebar'},
+  { key: '2', label: 'Filtreleme Seçenekleri' ,className:'filtre-sidebar'},
+  { key: '3', label: 'Rutin İşler',className:'rutin-sidebar' },
 ]
 /*
 const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map((icon, index) => {
@@ -413,7 +411,7 @@ const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map((icon, i
 */
 const MainPage = () => {
   const navigate = useNavigate();
-  const [selectedMenuKey, setSelectedMenuKey] = useState('1');
+  const [selectedMenuKey, setSelectedMenuKey] = useState('3');
 
   const handleLogout = async () => {
     try {
@@ -436,15 +434,11 @@ const MainPage = () => {
   const renderContent = () => {
     switch (selectedMenuKey) {
       case '1':
-        return <div>Anasayfa İçeriği</div>;
+        return <ToDoList/>; // Yapılacaklar Listesi bileşeni
       case '2':
-        return <div className='calendar-container'><Calendar/></div>;
-      case '3':
-        return <ToDoList /> ;  
-      case '4':
         return <div>Raporlar Yap İçeriği</div>;
       default:
-        return <div>Anasayfa İçeriği</div>;
+        return <div><ToDoList/></div>;
     }
   };
 
@@ -455,20 +449,19 @@ const MainPage = () => {
           display: 'flex',
           alignItems: 'center',
           background: '#001529',
-          padding: '48px 35px',
+          padding: '54px 45px',
         }}
       >
-         
         <Menu
           theme="dark"
           mode="horizontal"
-          defaultSelectedKeys={['1']}
+          defaultSelectedKeys={['3']}
           onClick={({ key }) => handleMenuClick(key)}
           style={{
             flex: 1,
             display: 'flex',
             justifyContent: 'center',
-            paddingLeft:10
+            paddingLeft:10,
           }}
         >
           {items1.map(item => (
@@ -479,11 +472,17 @@ const MainPage = () => {
         </Menu>
         <Button  className='log-out-button' type='primary' onClick={handleLogout}>Log Out</Button>
       </Header>
+
+
+
+
+
+
       <Layout>
         <Sider
           width={230}
           style={{
-            backgroundColor:'#f0f8ff',
+            background:'red',
           }}
         >
           <Menu
@@ -503,6 +502,7 @@ const MainPage = () => {
           ))}
           </Menu>
         </Sider>
+
         <Layout
           style={{
             padding: '0 24px 24px',
@@ -517,10 +517,11 @@ const MainPage = () => {
           </Breadcrumb>
           <Content
             style={{
+              paddingTop: 0,
+              paddingLeft: 0,
               minHeight: 750,
               background: colorBgContainer,
               borderRadius: borderRadiusLG,
-              backgroundColor:'#f0f8ff',
             }}
           >
             {renderContent()}
