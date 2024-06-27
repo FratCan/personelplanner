@@ -4,7 +4,7 @@ import dayjs from 'dayjs';
 import isBetween from 'dayjs/plugin/isBetween';
 import './Calendar.css';
 
-// isBetween plugin'ini kullanıma al
+
 dayjs.extend(isBetween);
 
 const Calendar = ({ todos }) => {
@@ -36,7 +36,7 @@ const Calendar = ({ todos }) => {
     const formattedDate = date.format('YYYY-MM-DD');
     const tasksForDate = todos.filter(todo =>
       (todo.startDate && dayjs(todo.startDate).format('YYYY-MM-DD') <= formattedDate &&
-       dayjs(todo.endDate).format('YYYY-MM-DD') >= formattedDate) ||
+        dayjs(todo.endDate).format('YYYY-MM-DD') >= formattedDate) ||
       (todo.isRecurring && date.format('dddd') === todo.recurringDay)
     );
 

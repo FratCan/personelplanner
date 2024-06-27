@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Breadcrumb, Layout, Menu, theme, Button } from 'antd';
 import ToDoList from './ToDoList';
-import Calendar from './Calendar'; // Import the Calendar component
-import FilterReport from './FilterReport'; // Import the FilterReport component
+import Calendar from './Calendar'; 
+import FilterReport from './FilterReport'; 
 import './MainPage.css';
 
 const { Header, Content } = Layout;
@@ -16,29 +16,19 @@ const items1 = [
 
 const MainPage = () => {
   const navigate = useNavigate();
-  const [selectedMenuKey, setSelectedMenuKey] = useState('1'); // Default to '1'
-  const [todos, setTodos] = useState([]); // Initialize todos state
-  /*
+  const [selectedMenuKey, setSelectedMenuKey] = useState('1'); // Varsayılan '1'
+  const [todos, setTodos] = useState([]);
+
   const handleLogout = async () => {
     try {
       localStorage.removeItem('token');
-      navigate('/'); // Giriş sayfasına yönlendirme
+      navigate('/', { replace: true }); 
     } catch (error) {
       console.error('Çıkış yapılırken bir hata oluştu!', error);
       alert('Çıkış yapılırken bir hata oluştu');
     }
   };
-  */
-  const handleLogout = async () => {
-    try {
-      localStorage.removeItem('token');
-      navigate('/', { replace: true }); // Use replace option to prevent back navigation
-    } catch (error) {
-      console.error('Çıkış yapılırken bir hata oluştu!', error);
-      alert('Çıkış yapılırken bir hata oluştu');
-    }
-  };
-  
+
   const handleMenuClick = (key) => {
     setSelectedMenuKey(key);
   };
@@ -50,11 +40,11 @@ const MainPage = () => {
   const renderContent = () => {
     switch (selectedMenuKey) {
       case '1':
-        return <ToDoList todos={todos} setTodos={setTodos} />; // Pass todos and setTodos to ToDoList
+        return <ToDoList todos={todos} setTodos={setTodos} />;
       case '2':
-        return <Calendar todos={todos} />; // Render Calendar component
+        return <Calendar todos={todos} />;
       case '3':
-        return <FilterReport todos={todos} />; // Render FilterReport component
+        return <FilterReport todos={todos} />;
       default:
         return <div><ToDoList todos={todos} setTodos={setTodos} /></div>;
     }
@@ -88,7 +78,7 @@ const MainPage = () => {
             </Menu.Item>
           ))}
         </Menu>
-        <Button className='log-out-button' type='primary' onClick={handleLogout}>Log Out</Button>
+        <Button  className='log-out-button ' type='primary' onClick={handleLogout}>Log Out</Button>
       </Header>
       <Layout>
         <Layout

@@ -52,8 +52,8 @@ function ToDoList({ todos, setTodos }) {
   const isToday = (date) => {
     const today = new Date();
     return date.getFullYear() === today.getFullYear() &&
-           date.getMonth() === today.getMonth() &&
-           date.getDate() === today.getDate();
+          date.getMonth() === today.getMonth() &&
+          date.getDate() === today.getDate();
   };
 
   const sortedTodos = [...todos].sort((a, b) => {
