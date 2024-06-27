@@ -1,0 +1,17 @@
+.baslik{
+    font-size: 25px;
+    color: rgb(9, 27, 65);
+    display: flex;
+    justify-content: center;
+}
+.ayar{
+    font-size: 20px;
+}
+.send-email-button{
+    background-color: rgb(29, 80, 129);
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+}

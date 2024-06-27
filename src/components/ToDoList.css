@@ -1,141 +1,14 @@
-/*
-.to-do-list {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.to-do-list h2 {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.input-box {
-    width: calc(100% - 100px);
-    margin-right: 10px;
-}
-
-.add-button {
-    width: 80px;
-}
-
-.list-item {
-    background-color: #fff;
-    border: 1px solid #e8e8e8;
-    border-radius: 4px;
-    margin-bottom: 5px;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-*/
-/*
-.App {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  max-width: 350px;
-  padding: 24px;
-  color: #2826b6;
-  border: 2px solid;
-  border-radius: 10px;
-  background-color: rgb(212, 233, 219);
-  margin-left: 60px;
-  margin-top: 60px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  
-}
-
-input, button {
-  border-radius: 20px;
-  padding: 10px;
-  font-size: 16px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 10;
-}
-
-li {
-  background: #fffbfb;
-  margin: 10px;
-  padding-left: 20px;
-  border: 2px solid #080000;
-  border-radius: 10px;
-  font-size: 15px;
-}
-.buttonspecial{
-  margin-top: 30px;
-  background-color: rgb(7, 171, 7);
-  cursor: pointer;
-  color: aliceblue;
-}
-h1{
-text-align: center;
-font-size: 20px;
-padding-bottom: 14px;
-}
-*/
-
-/*
-.App {
-  text-align: center;
-}
-
-.App h1{
-  font-size: 30px;
-  color: rgb(4, 20, 51);
-  font-weight: 600;
-  margin-bottom: 30px;
-  margin-top: 20px;
-}
-
-input {
-  margin: 5px;
-  padding: 10px;
-  font-size: 16px;
-}
-
-.add-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: rgb(44, 223, 44);
-  border-radius: 10px;
-  width: 100px ;
-  margin-left: 60px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  font-size: 16px;
-  margin-top: 20px;
-}
-
-li {
-  background: #97b9e9;
-  margin: 15px 200px;
-  padding: 15px;
-  border-radius: 5px;
-}
-*/
 .big-cont{
   display: flex;
   justify-content: center;
 }
+/*
 .calendar{
   min-width: 700px;
   max-width:100px;
   padding: 40px;
 }
+  */
 .App {
   font-family: Arial, sans-serif;
   padding: 20px;

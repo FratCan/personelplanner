@@ -1,12 +1,15 @@
-/* calendar.css */
 .highlight {
-    background-color: #5aff3d;
-    padding: 0.5em;
+    background-color: #71ff3d;
+    padding: 1.5em;
     display: inline-block;
-    color: white;
+    color: black;
 }
 .calendar {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
   }
   
   .daily-view {
@@ -24,4 +27,6 @@
     border-radius: 5px;
     padding: 5px;
   }
-  
+  .alert-message{
+    margin-bottom: 15px;
+  }
